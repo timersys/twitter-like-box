@@ -1,0 +1,256 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Twitter like box\n"
+"POT-Creation-Date: 2013-07-01 08:57-0300\n"
+"PO-Revision-Date: 2013-07-01 08:57-0300\n"
+"Last-Translator: Damian Logghe <info@timersys.com>\n"
+"Language-Team: Timersys <www.timersys.com>\n"
+"Language: en_EN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.5\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: twitter-like-box.php:45
+msgid "Main Settings"
+msgstr ""
+
+#: twitter-like-box.php:46
+msgid "OAuth Settings"
+msgstr ""
+
+#: twitter-like-box.php:115
+msgid "Please go to the <a href=\""
+msgstr ""
+
+#: twitter-like-box.php:231
+msgid ""
+"Here you can change style and colors of the widget. To use the widget go to"
+msgstr ""
+
+#: twitter-like-box.php:231
+msgid "Appearance -> Widgets"
+msgstr ""
+
+#: twitter-like-box.php:233
+msgid "To call the WP Twitter like box anyplace on your theme use:"
+msgstr ""
+
+#: twitter-like-box.php:237
+msgid ""
+"Also you can change the total users to display and show users you follow by "
+"applying false to show followers"
+msgstr ""
+
+#: twitter-like-box.php:241 twitter-like-box.php:247
+#, php-format
+msgid ""
+"Please check the extra options in the <a href=\"%s\" target=\"_blank"
+"\">documentation</a>"
+msgstr ""
+
+#: twitter-like-box.php:260
+#, php-format
+msgid ""
+"To use Twitter's REST API, you are required to authenticate with Twitter "
+"using OAuth as of version 1.1. You can acquire your OAuth details by "
+"registering with <a href=\"https://dev.twitter.com/\" target=\"_blank"
+"\">Twitter Developers</a> and creating a <a href=\"https://dev.twitter.com/"
+"apps/\" target=\"_blank\">Twitter application</a>. For more detailed "
+"instructions, please consult the <a href=\"%s\" target=\"_blank\">Twitter "
+"Like Box documentation</a>."
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:60
+#, php-format
+msgid ""
+"Check you <a href=\"%s\">OAuth settings</a>, there is a problem with the "
+"connection."
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:65
+msgid "Title:"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:70
+msgid "Username (without @):"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:75
+msgid "Show Followers or people you follow?"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:79
+msgid "Followers"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:82
+msgid "People I follow"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:88
+msgid "How many you want to show?"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:93
+msgid "Link followers to their profiles?"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:98
+msgid "Widget width:"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:103
+msgid "More settings"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:219
+msgid "on Twitter"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:223
+msgid "Follow @"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:231
+msgid "people follow"
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:235
+msgid "You follow "
+msgstr ""
+
+#: Twitter_Like_Box_Widget.class.php:235
+msgid " users"
+msgstr ""
+
+#: WP_Plugin_Base.class.php:111
+msgid ""
+"This plugin requires WordPress 3.0 or newer. Please update your WordPress "
+"installation to activate this plugin."
+msgstr ""
+
+#: WP_Plugin_Base.class.php:178
+msgid "Default Field"
+msgstr ""
+
+#: WP_Plugin_Base.class.php:179
+msgid "This is a default description."
+msgstr ""
+
+#: WP_Plugin_Base.class.php:218
+msgid "Settings"
+msgstr ""
+
+#: WP_Plugin_Base.class.php:395
+msgid "Save Changes"
+msgstr ""
+
+#: admin/fields.php:10
+msgid "Border Color"
+msgstr ""
+
+#: admin/fields.php:11
+msgid "Widget border color"
+msgstr ""
+
+#: admin/fields.php:18
+msgid "Top Border Color"
+msgstr ""
+
+#: admin/fields.php:19
+msgid "Color of the top border."
+msgstr ""
+
+#: admin/fields.php:26
+msgid "Background Color"
+msgstr ""
+
+#: admin/fields.php:27
+msgid "Widget background color"
+msgstr ""
+
+#: admin/fields.php:42
+msgid "Custom CSS"
+msgstr ""
+
+#: admin/fields.php:43
+msgid "Enter here your custom CSS"
+msgstr ""
+
+#: admin/fields.php:84
+msgid "Credits Url"
+msgstr ""
+
+#: admin/fields.php:85
+msgid "Give us some support by enabling the small link on footer."
+msgstr ""
+
+#: admin/fields.php:90
+msgid "Yes"
+msgstr ""
+
+#: admin/fields.php:91
+msgid "No"
+msgstr ""
+
+#: admin/fields.php:100
+msgid "Consumer Key"
+msgstr ""
+
+#: admin/fields.php:108
+msgid "Consumer Secret"
+msgstr ""
+
+#: admin/fields.php:115
+msgid "Access token"
+msgstr ""
+
+#: admin/fields.php:123
+msgid "Access token secret"
+msgstr ""
+
+#: admin/fields.php:131
+msgid "Cache Expire time"
+msgstr ""
+
+#: admin/fields.php:139
+msgid "Connections errors"
+msgstr ""
+
+#: admin/header.php:6
+msgid " options updated."
+msgstr ""
+
+#: admin/sidebar.php:5
+#, php-format
+msgid "Support %s"
+msgstr ""
+
+#: admin/sidebar.php:12
+msgid "If you enjoyed, please support this plugin:"
+msgstr ""
+
+#: admin/sidebar.php:15
+msgid "Rate the plugin 5★ on WordPress.org"
+msgstr ""
+
+#: admin/sidebar.php:18
+msgid "Translate the plugin to your language"
+msgstr ""
+
+#: admin/sidebar.php:22
+msgid "Hire me!"
+msgstr ""
+
+#: admin/sidebar.php:25
+msgid "Invite me a coffee :"
+msgstr ""
+
+#: admin/sidebar.php:38
+msgid "Save Settings"
+msgstr ""

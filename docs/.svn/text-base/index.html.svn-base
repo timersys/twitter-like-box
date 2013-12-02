@@ -1,0 +1,194 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>WP Twitter Like Box </title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+
+		img {
+			border: solid 5px #DCDCDC;
+		}
+
+		code {
+			background: #EAEAEA;
+			padding: 1px 3px;
+			margin: 0 1px;
+			font-size: 11px;
+			font-family: Consolas,Monaco,monospace;
+		}
+
+		pre {
+			background: #EAEAEA;
+			padding: 1px 3px;
+			font-size: 11px;
+			font-family: Consolas,Monaco,monospace;
+		}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">WP Twitter Like Box v1.3</h3>
+		
+		<hr>
+		
+		<h1 class="center">WP Twitter Like Box</h1>
+		
+		<div class="borderTop">
+			<div id="contact" class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 20/05/2013<br>
+					Updated: 31/05/2013<br>
+					By: Damian Logghe<br>
+					Email: <a href="mailto:info@timersys.com">info@timersys.com</a><br>
+					Website: <a href="http://www.timersys.com/">timersys.com</a><br>
+					Twitter: <a href="http://twitter.com/chifliiiii">@chifliiiii</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for downloading my plugin. If you have any questions that are beyond the scope of this help file, please feel free to email me or contact me via my <a href="http://www.timersys.com/en/contact/">contact form</a> on my website. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#quickstart">Quick Start</a>
+			<ol>
+				<li><a href="#oauth">Authorization with Twitter</a></li>
+				<li><a href="#latesttweets">Displaying WP Twitter Like Box</a></li>
+			</ol>
+			</li>
+			<li><a href="#shortcodes">Shortcodes</a></li>
+			<li><a href="#dev">PHP Functions</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+		
+		<hr>
+		
+		<h3 id="installation"><strong>A) Installation</strong> - <a href="#toc">top</a></h3>
+
+		<p>Move the folder named <b>wp-twitter-like-box</b> (located inside the <b>wp_twitter_like_boxv1.3</b> folder you just downloaded and extracted from CodeCanyon to your WordPress <b>/wp-content/plugins/</b> folder.</p>
+
+		<p>Navigate to <b>Plugins</b> inside the admin interface of your WordPress website and click <b>Activate</b> for <b>WP Twitter Like Box</b>. Congratulations! the plugin is now installed and activated.</p>
+
+		<p>If you have any trouble with the installation, please feel free to <a href="#contact">contact</a> me for help.</p>
+
+		<hr>
+
+		<h3 id="quickstart"><strong>B) Quick Start</strong> - <a href="#toc">top</a></h3>
+
+		<p>Once you have installed and activated WP Twitter Like Box, you can follow this quick start guide for displaying the WP Twitter Like Box widget on the sidebar of your WordPress website.</p>
+
+		<h4 id="oauth"><strong>1. Authorization with Twitter</strong></h4>
+
+		<p>You are required to authorize yourself with Twitter to use Twitters REST API version 1.1. We make it simple for you.</p>
+
+		<p>First navigate your browser to Twitters Developer <a href="https://dev.twitter.com/">website</a>, <strong>if you don't already have an account, create one now</strong>.</p>
+
+		<p>Once you have a Twitter dev account, log in and navigate to your Twitter <a href="https://dev.twitter.com/apps">apps</a> and <strong>create a new application</strong>.</p>
+
+		<p>Once you have created your Twitter application, navigate to it's settings page and look for the fields called <strong>Consumer key</strong>, <strong>Consumer Consumer secret</strong>, <strong>Access token</strong> and <strong>Access token secret</strong>. If you just created the app you will need to click the button that says "Create access tokens" and refresh your window.</p>
+
+		<img src="assets/img/screen1.jpg" alt="Twitter App" /><br><br>
+
+		<p>Now open up a new tab and go to your WordPress admin interface and navigate to <strong>Plugins</strong> > <strong>WP Twitter Like Box</strong> > <strong>OAuth </strong>, copy and paste your <strong>Consumer key</strong>, <strong>Consumer secret</strong>, <strong>Access token</strong> and <strong>Access token secret</strong> from your Twitter application settings over into your WP Twitter Like Box settings.</p>
+
+		<img src="assets/img/screen2.jpg" alt="OAuth Settings" /><br><br>
+
+		<p>And finally, Save the changes.</p>
+
+		<h4 id="latesttweets"><strong>2. Displaying the widget</strong></h4>
+
+		<p>Now that you are authorized with Twitter, navigate to your WordPress widgets. You should see 1 new widget:</p>
+
+		<ul>
+			<li>Twitter Like Box</li>
+		</ul>
+
+		<p>For displaying Twitter Like Box, drag and drop the widget into your sidebar. Enter your Twitter screen name into the <strong>username</strong> field and save the widget. If you want, you can also specify how many users to show. To show followers or people you follow and the width of the widget (default to 100%).</p>
+
+		<img src="assets/img/screen3.jpg" alt="Widgets" /><br><br>
+
+		<p>That's it! The Twitter Like Box should now be displayed on your sidebar.</p>
+
+		<hr>
+
+		<h3 id="shortcodes"><strong>C) Shortcodes</strong> - <a href="#toc">top</a></h3>
+
+		<p>As well as WordPress widgets, you can display the Twitter Like Box using shortcodes:</p>
+
+		<h5>Basic Shortcode</h5>
+
+		<p><code>[TLB username="chifliiiii"]</code></p>
+
+		<h5>All available options</h5>
+		
+		<p><code>[TLB id="my-shortcode-id" username="chifliiiii" total="10" width="100%" show_followers="followers" link_followers="yes"]</code></p>
+
+		<ul>
+			<li><strong>id</strong> - Used to store the result in cache. Necessary if you use multiple Like boxs with different settings</li>
+			<li><strong>username</strong> - Twitter username without @</li>
+			<li><strong>total</strong> - total users to display</li>
+			<li><strong>width</strong> - the total width of the widget (default to 100%)</li>
+			<li><strong>show_followers</strong> - if you set this to <strong>false</strong> the widget will display the users you follow instead of the users that follow you.</li>
+			<li><strong>link_followers</strong> - By default every user showed on the widget will include a link to their Twitter account. Set this to <strong>no</strong> to remove the link</li>
+		</ul>
+
+		<hr>
+
+		<h3 id="dev"><strong>D) PHP function</strong> - <a href="#toc">top</a></h3>
+
+		<p>It works the same way as shortcodes. Just call it like:</p>
+	
+
+		<pre>&lt;?php twitter_like_box($username=&quot;chifliiiii&quot;) ?&gt;</pre>
+		
+		<p>With all the options:</p>
+		
+		<pre>&lt;?php twitter_like_box($id="my-shortcode-id", $username="chifliiiii", $total="10", $width="100%", $show_followers="followers", $link_followers="yes") ?&gt;</pre>
+		
+		<ul>
+			<li><strong>id</strong> - Used to store the result in cache. Necessary if you use multiple Like boxs with different settings</li>
+			<li><strong>username</strong> - Twitter username without @</li>
+			<li><strong>total</strong> - total users to display</li>
+			<li><strong>width</strong> - the total width of the widget (default to 100%)</li>
+			<li><strong>show_followers</strong> - if you set this to <strong>false</strong> the widget will display the users you follow instead of the users that follow you.</li>
+			<li><strong>link_followers</strong> - By default every user showed on the widget will include a link to their Twitter account. Set this to <strong>no</strong> to remove the link</li>
+		</ul>
+
+		<hr>
+
+		<h3 id="credits"><strong>E) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+
+		<ul>
+			<li><b><a href="http://wordpress.org/">WordPress</a></b></li>
+			<li><b><a href="https://twitter.com/">Twitter</a></b></li>
+			<li><b><a href="http://oauth.net/">OAuth</a></b> - OAuth protocol</li>
+			<li><b><a href="https://github.com/abraham/twitteroauth">twitteroauth</a></b> - Twitter PHP OAuth Library by abraham</li>
+		</ul>
+
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this plugin. As I said at the beginning, I'd be glad to help you if you have any questions relating to this plugin. No guarantees, but I'll do my best to assist. If you have a more general question relating to the plugins on CodeCanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Timersys</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>
