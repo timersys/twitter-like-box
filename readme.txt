@@ -38,6 +38,9 @@ Twitter Like Box ([http://www.timersys.com/plugins-wordpress/twitter-like-box/](
 
 Increase your Twitter followers with Social PopUP Plugin ([http://wordpress.org/extend/plugins/social-popup/](http://wordpress.org/extend/plugins/social-popup/))
 
+= Github = 
+
+Fork me in https://github.com/timersys/twitter-like-box
 
 == Installation ==
 
