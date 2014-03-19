@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: Twitter Like Box Widget. Like facebook box but for twitter
-Version: 1.3.5.2
+Version: 1.3.5.4
 Description: Display your Twitter followers anywhere in the site or use the widget to display it on the sidebar.Like Faebook's Like Box show your followers and a button to follow you. Also you can display people YOU follow instead of followers
 Author: Damian Logghe
 Author URI: http://www.timersys.com
@@ -38,7 +38,7 @@ class Twitter_Like_Box extends WP_Plugin_Base
 		$this->WPB_PREFIX		=	'tlb';
 		$this->WPB_SLUG			=	'twitter-like-box-reloaded'; // Need to match plugin folder name
 		$this->WPB_PLUGIN_NAME	=	'Twitter Like Box';
-		$this->WPB_VERSION		=	'1.3.5.2';
+		$this->WPB_VERSION		=	'1.3.5.4';
 		$this->PLUGIN_FILE		=   plugin_basename(__FILE__);
 		$this->options_name		=   'tlb_settings';
 		
@@ -277,10 +277,10 @@ class Twitter_Like_Box extends WP_Plugin_Base
 		if( ! isset( $this->connection ) ) {
 			// Create a TwitterOauth object with consumer/user tokens.
 		    $this->connection = new TwitterOAuth(
-		    	$this->_options['consumer-key'],
-		    	$this->_options['consumer-secret'],
-		    	$this->_options['access-token'],
-		    	$this->_options['access-token-secret']
+		    	trim($this->_options['consumer-key']),
+		    	trim($this->_options['consumer-secret']),
+		    	trim($this->_options['access-token']),
+		    	trim($this->_options['access-token-secret'])
 		    );
 			$this->connection->host = "https://api.twitter.com/1.1/";
 			

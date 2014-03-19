@@ -97,7 +97,7 @@
 */
 
 	$this->settings['consumer-key'] = array(
-		'title'   => __( 'Consumer Key' , $this->WPB_PREFIX),
+		'title'   => __( 'Api Key' , $this->WPB_PREFIX),
 		'desc'    => '',
 		'std'     => '',
 		'type'    => 'text',
@@ -105,7 +105,7 @@
 	);
 	
 	$this->settings['consumer-secret'] = array(
-		'title'   => __( 'Consumer Secret' , $this->WPB_PREFIX),
+		'title'   => __( 'Api Secret' , $this->WPB_PREFIX),
 		'desc'    => '',
 		'std'     => '',
 		'type'    => 'password',

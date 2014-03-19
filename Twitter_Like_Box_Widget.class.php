@@ -129,12 +129,20 @@ class Twitter_Like_Box_Widget extends WP_Widget
 	//Finally thevfunction that create the widget 
 	static function get_tlb_widget($widget)
 	{
-		global $tlb;
+		global $tlb,$you;
+		
+		
 		$wpb_prefix = $tlb->get_domain();
 		$twitter =  self::fetch_twitter_followers($widget);
 		
 		ob_start();
-
+		
+		if( !empty($you['error']) && '32' == $you['code']) {
+			
+			echo $you['error'];
+		}
+		else
+		{
 		?>
 		<style type="text/css">
 			 #tlb_container {
@@ -260,9 +268,9 @@ class Twitter_Like_Box_Widget extends WP_Widget
 		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
 		</script>
 	<?php
+		}
 		$widget_code = ob_get_contents();
 		ob_end_clean();
-		
 		return $widget_code;
 	
 	}
@@ -276,7 +284,7 @@ class Twitter_Like_Box_Widget extends WP_Widget
 	}
 	
 	
-	function fetch_twitter_followers($options)
+	static function fetch_twitter_followers($options)
 	{
 		global $tlb,$you;
 		
@@ -380,10 +388,12 @@ class Twitter_Like_Box_Widget extends WP_Widget
 	}
 	static function is_twitter_error($response){
 		global $you,$tlb;
+
 		
 		if(is_object($response) && isset($response->errors) )
 		{
 			$you['error'] = 'Error code: '. $response->errors[0]->code .'<br>Error message: '.$response->errors[0]->message;
+			$you['code']  = $response->errors[0]->code;
 			$tlb->log_error($you['error']);
 						
 			return true;

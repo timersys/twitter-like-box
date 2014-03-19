@@ -4,7 +4,7 @@ Donate link: http://www.timersys.com/
 Tags: twitter, twitter followers, twitter like box, twitter followers box, twitter fans
 Requires at least: 3
 Tested up to: 3.6
-Stable tag: 1.3.5.2
+Stable tag: 1.3.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -71,6 +71,12 @@ This widget is intended to work on any sidebar size, so when you call it directl
 
 
 == Changelog ==
+
+= 1.3.5.4 =
+
+* Added error message to show instead of empty images if aki keys are not inserted properly
+* Fixed warning given with strict standards
+* Change consumer name to Api to match new Twitter settings
 
 = 1.3.5.2 =
 
